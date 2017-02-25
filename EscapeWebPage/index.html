@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Escape Webpage</title>
+<meta charset=utf-8/>
+<link rel="stylesheet" href="style.css" type="text/css">
+
+		<!--Script-->
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		
+		<!--Bootstrap-->
+		<script src="bootstrap.js"></script>
+		
+		<script>
+			$(document).ready(function() {
+			var menu = $(".menu");
+			$(window).resize(function(){
+				$(".menu-toggle").removeClass("active");
+				if($(window).innerWidth() > 600){
+					menu.show();
+				} else {
+					menu.hide();
+				}
+			});
+			$(".menu-toggle").click(function(){
+				$(this).toggleClass("active");
+				menu.slideToggle();
+			})
+			$(".open-submenu").click(function(){
+				$(this).toggleClass("active");
+				$(this).next("ul").slideToggle();
+				$(this).children(".arrow").toggleClass("down up");
+			});
+			});
+		</script>
+</head>
+
+<body>
+	<div class="col-xs-12 col-sm12 col-md-12 col-lg-12 col-xl-12 center-theme">
+		<nav>
+			<div class="navbar clear">
+				<br>
+				<br>
+				<img src="paper-plane.png" class="logo" alt="logo"> <a href="index.html" class="logo">Escape</a>
+				<div class="menu-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 ">
+					
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="xml.html">Home</a></li>
+						<li><a href="gallery.html">Services</a></li>
+						<li><a href="credits.html">Clients</a></li>
+						<li><a href="">Team</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<br>
+		<br>
+		<h4>Can you build the website of my dreams?</h4><br>
+		
+		<h1>yup, we can do that.</h1><br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<a class="btn btn-secondary awaken" href="learnmore.html"><img src="Button.png"></a>
+	</div>
+	
+	<div class="col-xs-12 col-sm12 col-md-12 col-lg-12 col-xl-12 center-creator">
+		<div class="col-xs-6 col-sm6 col-md-6 col-lg-6 col-xl-6 center-creator">
+		<div class="Description">
+			<h2>Web <b>Development</b></h2> <br>
+			Proin iaculis purus consequat sem cure digni ssim. 
+			Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. 
+			Proin iaculis purus consequat sem cure digni ssim. 
+			Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.<br>
+			<br>
+			Iaculis purus consequat sem cure digni ssim. 
+			Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. 
+			Proin iaculis purus consequat sem cure digni ssim.
+		</div>
+		</div>
+		<div class="col-xs-6 col-sm6 col-md-6 col-lg-6 col-xl-6 center-creator">
+		<div class="Imagez">
+			<img src="Flowtreeicon.png">
+		</div>
+		</div>
+		<div class="col-xs-6 col-sm6 col-md-6 col-lg-6 col-xl-6 center-creator">
+		<div class="Imagezleft">
+			<img src="Usersicon.png">
+		</div>
+		</div>
+		<div class="col-xs-6 col-sm6 col-md-6 col-lg-6 col-xl-6 center-creator">
+		<div class="Descriptionright">
+			<h2>Identity <b>Branding</b></h2> <br>
+			Proin iaculis purus consequat sem cure digni ssim. 
+			Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. 
+			Proin iaculis purus consequat sem cure digni ssim. 
+			Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.<br>
+			<br>
+			Iaculis purus consequat sem cure digni ssim. 
+			Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. 
+			Proin iaculis purus consequat sem cure digni ssim.
+		</div>
+		</div>
+	</div>
+</body>
+</html>
