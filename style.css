@@ -11,6 +11,12 @@ body {
 a { 
 	text-decoration:none;
  }
+ .rounded-circle {
+  border-radius: 50%;
+}
+.littleimages{
+	float: right;
+}
  .Description{
 	 width: 450;
 	 float: left;
@@ -34,6 +40,10 @@ a {
 .center-creator{
 	text-align: left;
 	background-color: white;
+}
+.center-creator-gray{
+	text-align: left;
+	background-color: eee8e9;
 }
 .center-theme{
 	width:1400;
