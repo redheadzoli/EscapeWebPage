@@ -11,6 +11,42 @@ body {
 a { 
 	text-decoration:none;
  }
+ .staffmember{
+	 color: white;
+	 font-size: 18px;
+ }
+ .rounded-circle-black {
+  border-radius: 50%;
+  border: 6px solid white;
+}
+ .darkbackground-center{
+	 text-align: center;
+	 background-color: black;
+	 color: white;
+ }
+ .darkbackground-center h1{
+	 font-size: 40px;
+	 text-transform: none;
+ }
+ .darkbackground-center strong{
+	 font-size: 40px;
+	 text-transform: none;
+ }
+ .secondtitle-black{
+	 font-size: 16px;
+	 color: gray;
+ }
+ .right{
+	text-align: left;
+	-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+		opacity:1;
+}
+
  .bubble{
     background-color: #F2F2F2;
     border-radius: 5px;
