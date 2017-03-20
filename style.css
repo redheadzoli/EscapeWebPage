@@ -11,6 +11,52 @@ body {
 a { 
 	text-decoration:none;
  }
+ .pictureright{
+	float: right;
+ }
+ .pictureleft{
+	float: left;
+ }
+ .twitter{
+	width: 42px; 
+	height: 42px;
+	background-image: url('Twitter.png');
+ }
+ .twitter:hover{
+	width: 42px; 
+	height: 42px;
+	background-image: url('hovertwit.png');
+ }
+  .facebook{
+	width: 42px; 
+	height: 42px;
+	background-image: url('Facebook.png');
+ }
+ .facebook:hover{
+	width: 42px; 
+	height: 42px;
+	background-image: url('hoverfb.png');
+ }
+ .pinterest{
+	width: 42px; 
+	height: 42px;
+	background-image: url('Pinterest.png');
+ }
+ .pinterest:hover{
+	width: 42px; 
+	height: 42px;
+	background-image: url('hoverprint.png');
+ }
+ .gugli{
+	width: 42px; 
+	height: 42px;
+	background-image: url('Gugli.png');
+ }
+ .gugli:hover{
+	width: 42px; 
+	height: 42px;
+	background-image: url('hovergug.png');
+ }
  .staffmember{
 	 color: white;
 	 font-size: 18px;
@@ -35,6 +81,10 @@ a {
  .secondtitle-black{
 	 font-size: 16px;
 	 color: gray;
+ }
+ .secondtitle-white{
+	 font-size: 18px;
+	 color: white;
  }
  .right{
 	text-align: left;
@@ -127,7 +177,7 @@ a {
 	width:1400;
 	height:930;
 	text-align: center;
-	background-image: url('banner.png');
+	background-image: url('banner2.png');
 }
 .img-thumbnail {
   position: relative;
