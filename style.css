@@ -65,6 +65,22 @@ a {
   border-radius: 50%;
   border: 6px solid white;
 }
+.whitetoxt{
+	color: white;
+	size: 9px;
+}
+.bluebackground{
+	background-color: #7690c5;
+	color: white;
+}
+.bluebackground h1{
+	 font-size: 40px;
+	 text-transform: none;
+ }
+ .bluebackground strong{
+	 font-size: 40px;
+	 text-transform: none;
+ }
  .darkbackground-center{
 	 text-align: center;
 	 background-color: black;
@@ -1670,9 +1686,7 @@ h6,
   font-size: 12px;
 }
 p {
-  margin: 0 0 10px;
-  color: black;
-  font-size: 14px;
+  margin: 10px 0 10px;
 }
 .lead {
   margin-bottom: 20px;
@@ -7265,13 +7279,13 @@ form {
 
 /* Full-width inputs */
 input[type=text], input[type=password] {
-    width: 50%;
+    width: 70%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 12px 0;
     display: inline-block;
-    border: 1px solid blue;
+	border-radius: 5px;
     box-sizing: border-box;
-	border-radius: 12px;
+	color: gray;
 }
 
 /* Set a style for all buttons */
