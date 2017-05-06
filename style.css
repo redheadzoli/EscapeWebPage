@@ -11,6 +11,9 @@ body {
 a { 
 	text-decoration:none;
  }
+ .padding-left{
+	 margin: 0 0 0 40px;
+ }
  .center-blue{
 	 text-align: center;
  }
