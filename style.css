@@ -11,6 +11,18 @@ body {
 a { 
 	text-decoration:none;
  }
+ .center-blue{
+	 text-align: center;
+ }
+ .border-bottom{
+	 border-bottom: 1px solid #87a0d2;
+ }
+ .right-float{
+	float: right;
+ }
+ .left-float{
+	float: right;
+ }
  .pictureright{
 	float: right;
  }
@@ -70,6 +82,7 @@ a {
 	size: 9px;
 }
 .bluebackground{
+	padding: 10px;
 	background-color: #7690c5;
 	color: white;
 }
@@ -112,7 +125,34 @@ a {
         -ms-filter: "FlipH";
 		opacity:1;
 }
-
+.clientnameright{
+	font-size: 14px;
+	 color: blue;
+	 -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+		opacity:1;
+}
+.bubbledescright{
+	font-family: Trebuchet MS;
+	color: gray;
+	font-size: 18px;
+	-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+		opacity:1;
+}
+.bubbledesc{
+	font-family: Trebuchet MS;
+	color: gray;
+	font-size: 18px;
+}
  .bubble{
     background-color: #F2F2F2;
     border-radius: 5px;
@@ -138,11 +178,6 @@ a {
         -webkit-transform: rotate( 45deg );
     width: 20px;
 }
-.bubbledesc{
-	font-family: Trebuchet MS;
-	color: gray;
-	font-size: 18px;
-}
  .secondtitle{
 	 font-size: 12px;
 	 color: gray;
@@ -157,9 +192,24 @@ a {
  }
  .rounded-circle {
   border-radius: 50%;
+  position: relative;
 }
 .littleimages{
 	float: right;
+}
+.littleimages2{
+	float: right;
+}
+.littleimages:hover{
+	-webkit-animation: rotating 2s linear infinite;
+}
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
 }
  .Description{
 	 width: 450;
@@ -176,6 +226,10 @@ a {
  .Descriptionright{
 	 width: 450;
 	 float: left;
+ }
+ .awakened{
+	margin: 320px;
+	border: 1px solid black;
  }
  .awaken{
 	margin: 12px;

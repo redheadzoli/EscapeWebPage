@@ -30,24 +30,41 @@
 				$(this).next("ul").slideToggle();
 				$(this).children(".arrow").toggleClass("down up");
 			});
-			
-			$( window ).scroll(function() {
-				if ($(window).scrollTop() > startingMikuImageTopPosition + mikuImageHeight)
-				{
-					$(".rounded-circle").animate({ left: 0 }, "slow");
-				}
+				$( "#Mikuid" ).css('z-index', 3000);
+				
+				/* - - -*/
+				
+				/* Mikuid*/
+				
+				$( window ).scroll(function() {
+				$( "#Mikuid" ).offset({ top: $(window).scrollTop(), left: 0 });
+				});
+				
+				/* Miku and Yay*/
+				var mikuImageWidth = $("#Miku").width();
+				var startingMikuImageTopPosition = $(".rounded-circle").offset().left;
+				/*$("#Miku").load(function() {
+					mikuImageWidth = $(this).width();
+				});*/
+				
+				/*alert($( ".rounded-circle" ).offset().left);*/
+				$( ".rounded-circle" ).offset({ left: 0 });
+				$( ".rounded-circle" ).css('z-index', 3000);
+				$("button").click(function(){
+					
+					$(".rounded-circle").offset({ left: startingMikuImageTopPosition });
+					/*alert(startingMikuImageTopPosition);*/
+				});
 			});
-			var mikuImageHeight = $("#Miku").height();
-			var mikuImageWidth = $("#Miku").width();
-			var startingMikuImageTopPosition = $(".rounded-circle").offset().left;
-			$( ".rounded-circle" ).offset({ left: 0 });
-			$( ".rounded-circle" ).css('z-index', 3000);
-			});
-			alert(startingMikuImageTopPosition);
+			/* - - -*/
+				
 		</script>
 </head>
 
 <body>
+	<!--A Miku és a másik csaj képe beguruljon tekeréskor -->
+	
+	<img src="Miku.png" id="Mikuid" alt="Mikuid">
 	<div class="col-xs-12 col-sm12 col-md-12 col-lg-12 col-xl-12 center-theme">
 		<nav>
 			<div class="navbar clear">
@@ -63,11 +80,11 @@
 				-->
 				<div class="menu">
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="#services">Services</a></li>
-						<li><a href="#clients">Clients</a></li>
-						<li><a href="#team">Team</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li><a href="xml.html">Home</a></li>
+						<li><a href="gallery.html">Services</a></li>
+						<li><a href="credits.html">Clients</a></li>
+						<li><a href="">Team</a></li>
+						<li><a href="">Contact</a></li>
 					</ul>
 				</div>
 				
@@ -78,7 +95,17 @@
 		<h4>Can you build the website of my dreams?</h4><br>
 		
 		<h1>yup, we can do that.</h1><br>
-		<a class="btn btn-secondary awakened" href="learnmore.html"><img src="Button.png"></a>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<a class="btn btn-secondary awaken" href="learnmore.html"><img src="Button.png"></a>
 	</div>
 	
 	<div class="clear"></div>
@@ -90,7 +117,7 @@
 		</div>
 		<div class="col-md-6 center-creator">
 		<div class="Description">
-			<h2 id="services">Web <b>Development</b></h2> <br>
+			<h2>Web <b>Development</b></h2> <br>
 			Proin iaculis purus consequat sem cure digni ssim. 
 			Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. 
 			Proin iaculis purus consequat sem cure digni ssim. 
@@ -110,7 +137,7 @@
 		<div class="col-xs-12 col-sm12 col-md-12 col-lg-12 col-xl-12 center-creator-gray">
 		<div class="col-md-5 center-creator-gray">
 		<div class="Imagezleft">
-			<img src="Usersicon.png" alt="Usericon" class="littleimages2">
+			<img src="Usersicon.png" alt="Usericon" class="littleimages">
 		</div>
 		</div>
 		<div class="col-md-7 center-creator-gray">
@@ -208,7 +235,7 @@
 	<br><br>
 	<div class="col-xs-12 col-sm12 col-md-12 col-lg-12 col-xl-12 center-creator">
 		<div class="center">
-		Awesome <strong id="clients">Clients</strong><br>
+		Awesome <strong>Clients</strong><br>
 		<p class="secondtitle">See what nice things our clients said about us</p>
 		</div>
 	<br><br>
@@ -218,7 +245,7 @@
 		-->
 		</div>
 		<div class="col-md-2 center">
-			<img src="Miku.png" alt="Miku" class="rounded-circle" id="Miku">
+			<img src="Miku.png" alt="Miku" class="rounded-circle">
 		</div>
 		<div class="col-md-8">
 			<div class="bubble">
@@ -247,7 +274,7 @@
 			</div>
 		</div>
 		<div class="col-md-3">
-			<img src="yay.png" alt="yay" class="rounded-circle" id="Yay">
+			<img src="yay.png" alt="yay" class="rounded-circle">
 		</div>
 		<div class="clear"></div>
 		<br><br>
@@ -280,7 +307,7 @@
 	<br><br>
 	<br><br>
 	<div class="col-xs-12 col-sm12 col-md-12 col-lg-12 col-xl-12 darkbackground-center">
-		<h1 id="team">Amazing <strong>Team</strong></h1>
+		<h1>Amazing <strong>Team</strong></h1>
 		<p class="secondtitle-black">These wonderful people make work enjoyable.</p>
 		<br><br>
 		<div class="col-md-1">
@@ -373,11 +400,10 @@
 		<div class="col-md-1">
 			<div class="gugli"></div>
 		</div>
-		<div class="col-md-1">
-			
-		</div>
+		
 		<div class="col-md-2">
 			<div class="facebook pictureleft"></div>
+		
 			<div class="pinterest pictureright"></div>
 		</div>
 		
@@ -410,7 +436,7 @@
 		-->
 		</div>
 		<div class="col-md-4">
-		<h1 id="contact">Say <strong>Hello</strong></h1>
+		<h1>Say <strong>Hello</strong></h1>
 		</div>
 		
 		<div class="col-md-6">
@@ -485,8 +511,7 @@
 		<div class="clear"></div>
 		<br><br>
 		<div class="col-md-12 center-blue">
-			© 2014 Escape by FreebiesXpress · Made in Toronto<br>
-			Original Design FreebiesXpress · Made by Kiss Zoltán
+			© 2014 Escape by FreebiesXpress · Made in Toronto
 		</div>
 		<br><br>
 		
